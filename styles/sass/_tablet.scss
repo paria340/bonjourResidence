@@ -22,9 +22,28 @@
             margin-left: 0px;
         }
     }
+    .form .nom,
+    .form .prenom,
+    .form .residence,
+    .form .message,
+    .form .personne{
+        input[type="text"]{
+            width: 300px;
+        }
+    }
+    .form .right .telecharger .boxT,
+    .form .left select,
+    .form .left textarea{
+        width: 300px;
+    }
+    
 
 }
 @media (max-width: 940px){
+    header{
+        background-position: center;
+        background-size: cover;
+    }
     .about{
         display: block;
         text-align: center;
@@ -52,5 +71,15 @@
     }
     .lastSection .overlay button{
         width: 50%;
+    }
+}
+
+@media (max-width: 780px){
+    .form{
+        display: block;
+        padding-left: 30px;
+    }
+    form{
+        margin-top: 200px;
     }
 }

@@ -2,7 +2,7 @@
 form{
     background-color: #ffff;
     border: black 1px solid;
-    width: 90%;
+    width: 85%;
     margin: 50px auto 0 auto;
     .close{
         width: 30px;
@@ -17,13 +17,10 @@ label{
     padding-top: 10px;
 }
 
-.formWrapper{
-    
+.formWrapper{ 
     width: 90%;
     margin: 0 auto;
     padding-top: 30px;
-    // padding-bottom: 50px;
-
 }
 .upperPart{
     display: flex;

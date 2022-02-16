@@ -352,8 +352,8 @@ header {
   background-image: url(../img/header1.png);
   background-color: #4f1a40;
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background-position: right;
+  background-size: contain;
 }
 header .space {
   background-color: #4a4a4a;
@@ -529,7 +529,7 @@ header div .logo {
 form {
   background-color: #ffff;
   border: black 1px solid;
-  width: 90%;
+  width: 85%;
   margin: 50px auto 0 auto;
 }
 form .close {
@@ -732,8 +732,27 @@ label {
 .commentaire .commentBlock .lowerSection .heartLogo {
     margin-left: 0px;
   }
+
+  .form .nom input[type=text],
+.form .prenom input[type=text],
+.form .residence input[type=text],
+.form .message input[type=text],
+.form .personne input[type=text] {
+    width: 300px;
+  }
+
+  .form .right .telecharger .boxT,
+.form .left select,
+.form .left textarea {
+    width: 300px;
+  }
 }
 @media (max-width: 940px) {
+  header {
+    background-position: center;
+    background-size: cover;
+  }
+
   .about {
     display: block;
     text-align: center;
@@ -763,6 +782,16 @@ label {
 
   .lastSection .overlay button {
     width: 50%;
+  }
+}
+@media (max-width: 780px) {
+  .form {
+    display: block;
+    padding-left: 30px;
+  }
+
+  form {
+    margin-top: 200px;
   }
 }
 @media (max-width: 480px) {
@@ -809,5 +838,22 @@ label {
 
   footer {
     height: 100px;
+  }
+
+  form {
+    margin-top: 200px;
+  }
+
+  .form {
+    display: block;
+    padding-left: 30px;
+  }
+
+  h4 {
+    text-align: center;
+  }
+
+  .upperPart .logoImg {
+    display: none;
   }
 }
