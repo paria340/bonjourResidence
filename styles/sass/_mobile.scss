@@ -2,7 +2,6 @@
     h1{
         font-size: 28px;
         width: 100%;
-        
     }
     h2{
         font-size: 28px;
@@ -19,38 +18,16 @@
         margin-top: 20px;
         margin-right: 20px;
     }
-    .about{
-        display: block;
-        text-align: center;
-        margin-top: 40px;
-        margin-bottom: 150px;
-        .left{
-            width: auto;
-            height: 180px;
-            margin-bottom: 20px;
-        }
-        .right{
-            margin-left: 0px;
-        }
-    }
     .commentaire{
-        // margin-top: 150px;
-        display: inherit;
-        .image,
-        .imageUnkown{
-            background-image: url(../img/placeholder.jpg);
-            width: 100px;
-            height: 100px;
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-            border-radius: 10px 0 10px 0;
-        }
-        .imageUnkown{
-            background-image: url(../img/placeholder2.jpg);
-        }
-        .commentBlock{
-            text-align: center;
+        .commentBlock {
+            margin-left: 0;
+            width: 100%;
+            .upSection .par{
+                padding-top: 20px;
+            }
+            .lowerSection p{
+                padding-bottom: 10px;
+            }
         }
     }
     .lastSection .overlay button{

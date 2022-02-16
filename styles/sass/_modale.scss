@@ -2,12 +2,13 @@
 form{
     background-color: #ffff;
     border: black 1px solid;
-    width: 80%;
-    margin: 0 auto;
+    width: 90%;
+    margin: 50px auto 0 auto;
     .close{
         width: 30px;
         height: 30px;
         float: right;
+        cursor: pointer;
     }
 }
 
@@ -17,10 +18,11 @@ label{
 }
 
 .formWrapper{
-    width: 80%;
+    
+    width: 90%;
     margin: 0 auto;
-    padding-top: 70px;
-    padding-bottom: 50px;
+    padding-top: 30px;
+    // padding-bottom: 50px;
 
 }
 .upperPart{
@@ -28,7 +30,7 @@ label{
     height: 300px;
     .logoImg{
         background-image: url(../img/heart-04.png);
-        width: 65%;
+        width: 250px;
         height: 250px;
         background-repeat: no-repeat;
         background-position: center;
@@ -56,8 +58,8 @@ label{
                 border-radius: 5px;
                 margin-top: 10px;
                 margin-bottom: 10px;
-                width: 100%;
-                height: 200px;
+                width: 400px;
+                height: 150px;
                 border: solid black 1px;
             }
             img{
@@ -81,6 +83,7 @@ label{
             padding: 5px;
         }
         textarea{
+            background-color: white;
             resize: none;
             margin-top: 10px;
             padding-top: 20px;
@@ -104,7 +107,8 @@ label{
         flex-direction: column;
     }
     input[type="text"]{
-        width: 100%;
+        background-color: white;
+        width: 400px;
         padding: 5px;
         border-radius: 5px;
         border: black solid 1px;
@@ -124,5 +128,21 @@ label{
     .personne input[type="text"]{
         margin-top: 10px;
         margin-bottom: 10px;
+    }
+}
+
+.popupModale {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding-bottom: 35px;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 300ms ease-in-out;
+    z-index: 100;
+    &.isVisible {
+      opacity: 1;
+      pointer-events: auto;
     }
 }

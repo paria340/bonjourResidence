@@ -283,7 +283,7 @@ h3 {
 
 h4 {
   font-size: 40px;
-  font-weight: 400;
+  font-weight: 200;
   margin-bottom: 20px;
   letter-spacing: 0.1;
 }
@@ -325,6 +325,20 @@ button:focus {
 
 i {
   font-size: 50px;
+}
+
+.bodyBlackout {
+  position: absolute;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.65);
+  display: none;
+}
+.bodyBlackout.is-blacked-out {
+  display: block;
 }
 
 footer {
@@ -515,13 +529,14 @@ header div .logo {
 form {
   background-color: #ffff;
   border: black 1px solid;
-  width: 80%;
-  margin: 0 auto;
+  width: 90%;
+  margin: 50px auto 0 auto;
 }
 form .close {
   width: 30px;
   height: 30px;
   float: right;
+  cursor: pointer;
 }
 
 label {
@@ -530,10 +545,9 @@ label {
 }
 
 .formWrapper {
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
-  padding-top: 70px;
-  padding-bottom: 50px;
+  padding-top: 30px;
 }
 
 .upperPart {
@@ -544,7 +558,7 @@ label {
 }
 .upperPart .logoImg {
   background-image: url(../img/heart-04.png);
-  width: 65%;
+  width: 250px;
   height: 250px;
   background-repeat: no-repeat;
   background-position: center;
@@ -590,8 +604,8 @@ label {
   border-radius: 5px;
   margin-top: 10px;
   margin-bottom: 10px;
-  width: 100%;
-  height: 200px;
+  width: 400px;
+  height: 150px;
   border: solid black 1px;
 }
 .form .right .telecharger img {
@@ -619,6 +633,7 @@ label {
   padding: 5px;
 }
 .form .left textarea {
+  background-color: white;
   resize: none;
   margin-top: 10px;
   padding-top: 20px;
@@ -646,7 +661,8 @@ label {
           flex-direction: column;
 }
 .form input[type=text] {
-  width: 100%;
+  background-color: white;
+  width: 400px;
   padding: 5px;
   border-radius: 5px;
   border: black solid 1px;
@@ -667,6 +683,24 @@ label {
 .form .personne input[type=text] {
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+.popupModale {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  padding-bottom: 35px;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  z-index: 100;
+}
+.popupModale.isVisible {
+  opacity: 1;
+  pointer-events: auto;
 }
 
 @media (max-width: 1240px) {
@@ -691,6 +725,44 @@ label {
 .commentaire .commentBlock .lowerSection {
     display: inherit;
     margin-left: 20px;
+  }
+  .commentaire .commentBlock .upSection .writeLogo,
+.commentaire .commentBlock .upSection .heartLogo,
+.commentaire .commentBlock .lowerSection .writeLogo,
+.commentaire .commentBlock .lowerSection .heartLogo {
+    margin-left: 0px;
+  }
+}
+@media (max-width: 940px) {
+  .about {
+    display: block;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 150px;
+  }
+  .about .left {
+    width: auto;
+    height: 180px;
+    margin-bottom: 20px;
+  }
+  .about .right {
+    margin-left: 0px;
+  }
+
+  .commentaire {
+    display: inherit;
+  }
+  .commentaire .image,
+.commentaire .imageUnkown {
+    width: 150px;
+    height: 150px;
+  }
+  .commentaire .commentBlock {
+    text-align: center;
+  }
+
+  .lastSection .overlay button {
+    width: 50%;
   }
 }
 @media (max-width: 480px) {
@@ -720,39 +792,15 @@ label {
     margin-right: 20px;
   }
 
-  .about {
-    display: block;
-    text-align: center;
-    margin-top: 40px;
-    margin-bottom: 150px;
-  }
-  .about .left {
-    width: auto;
-    height: 180px;
-    margin-bottom: 20px;
-  }
-  .about .right {
-    margin-left: 0px;
-  }
-
-  .commentaire {
-    display: inherit;
-  }
-  .commentaire .image,
-.commentaire .imageUnkown {
-    background-image: url(../img/placeholder.jpg);
-    width: 100px;
-    height: 100px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    border-radius: 10px 0 10px 0;
-  }
-  .commentaire .imageUnkown {
-    background-image: url(../img/placeholder2.jpg);
-  }
   .commentaire .commentBlock {
-    text-align: center;
+    margin-left: 0;
+    width: 100%;
+  }
+  .commentaire .commentBlock .upSection .par {
+    padding-top: 20px;
+  }
+  .commentaire .commentBlock .lowerSection p {
+    padding-bottom: 10px;
   }
 
   .lastSection .overlay button {

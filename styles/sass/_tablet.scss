@@ -17,6 +17,40 @@
     .commentaire .commentBlock .lowerSection{
         display: inherit;
         margin-left: 20px;
+        .writeLogo,
+        .heartLogo{
+            margin-left: 0px;
+        }
     }
 
+}
+@media (max-width: 940px){
+    .about{
+        display: block;
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 150px;
+        .left{
+            width: auto;
+            height: 180px;
+            margin-bottom: 20px;
+        }
+        .right{
+            margin-left: 0px;
+        }
+    }
+    .commentaire{
+        display: inherit;
+        .image,
+        .imageUnkown{
+            width: 150px;
+            height: 150px;
+        }
+        .commentBlock{
+            text-align: center;
+        }
+    }
+    .lastSection .overlay button{
+        width: 50%;
+    }
 }
