@@ -37,11 +37,14 @@
         height: 100px;
     }
     form{
-        margin-top: 200px;
+        margin-top: 300px;
     }
     .form{
         display: block;
-        padding-left: 30px;
+        padding-left: 0;
+        .left{
+            margin-right: 0;
+        }
     }
     h4{
         text-align: center;
@@ -49,4 +52,26 @@
     .upperPart .logoImg{
         display: none;
     }
+    .form .nom,
+    .form .prenom,
+    .form .residence,
+    .form .message,
+    .form .personne{
+        input[type="text"]{
+            width: 100%;
+        }
+    }
+    .form .right .telecharger .boxT,
+    .form .left select,
+    .form .left textarea{
+        width: 100%;
+    }
+    .upperPart .right{
+        padding-left: 0;
+        width: 90%;
+    }
+    h4{
+        text-align: left;
+    }
+
 }

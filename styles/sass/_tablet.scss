@@ -58,6 +58,20 @@
             margin-left: 0px;
         }
     }
+    .form .nom,
+    .form .prenom,
+    .form .residence,
+    .form .message,
+    .form .personne{
+        input[type="text"]{
+            width: 280px;
+        }
+    }
+    .form .right .telecharger .boxT,
+    .form .left select,
+    .form .left textarea{
+        width: 280px;
+    }
     .commentaire{
         display: inherit;
         .image,

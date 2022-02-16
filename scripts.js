@@ -7,8 +7,7 @@ const popupModale = document.getElementById('popupModale')
 const bodyBlackout = document.getElementById('bodyBlackout')
 
 modale.onClick = function(){
-    button.addEventListener('click', function(event){
-        event.preventDefault();
+    button.addEventListener('click', function(){
         popupModale.classList.add('isVisible')
         bodyBlackout.style.display='inherit'
         bodyBlackout.classList.add('bodyBlackout')
@@ -17,7 +16,7 @@ modale.onClick = function(){
 
 modale.close = function(){
     const close = document.getElementById('close')
-    close.addEventListener('click', function(event){
+    close.addEventListener('click', function(){
         popupModale.classList.remove('isVisible')
         bodyBlackout.classList.remove('bodyBlackout')
     })
