@@ -1,0 +1,87 @@
+
+.commentaire{
+    display: flex;
+    margin-top: 20px;
+    .image,
+    .imageUnkown{
+        background-image: url(../img/placeholder.jpg);
+        width: 250px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border-radius: 10px 0 10px 0;
+    }
+    .imageUnkown{
+        background-image: url(../img/placeholder2.jpg);
+    }
+    .commentBlock{
+        margin-left: 20px;
+        background-color: #f0f0f0;
+        width: 80%;
+        border-radius: 10px 0 10px 0;
+        .upSection{
+            display: flex;
+            margin-top: 20px;
+            .par,
+            .aqui{
+                display: flex;
+                p{
+                    font-weight: 700;
+                    span{
+                        font-weight: 400;
+                    }
+                } 
+            }
+            .writeLogo,
+            .heartLogo{
+                background-image: url(../img/edit.png);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                width: 20px;
+                height: 20px;
+                margin-right: 10px;
+                margin-left: 40px;
+            }
+            .heartLogo{
+                background-image: url(../img/heart-post.svg);
+                background-size: contain;
+                margin-left: 40px;
+            }
+        }
+        .paragraphe p{
+            width: 90%;
+            margin: 0 auto;
+        }
+        .lowerSection{
+            display: flex;
+            justify-content: space-between;
+            margin: 0 auto;
+            margin-top: 20px;
+            width: 90%;
+            .left{
+                display: flex;
+            }
+            .dots{
+                background-image: url(../img/more-options.png);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                width: 20px;
+                height: 20px;
+                margin-right: 10px;
+            }
+            p{
+                font-weight: 200;
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 130px;
+}

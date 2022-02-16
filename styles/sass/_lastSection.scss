@@ -1,0 +1,21 @@
+
+.lastSection{
+    background-image: url(../img/table.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    height: 400px;
+    margin-bottom: 90px;
+    .overlay{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        align-items: center;
+        button{
+            width: 23%;
+            margin-top: 20px;
+        }
+    }
+}

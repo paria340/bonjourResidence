@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8ddd0c5769.js" crossorigin="anonymous"></script>
+    <title>Modal</title>
+</head>
+
+<body>
+    <main>
+        <form>
+            <div class="formWrapper">
+                <img class="close" src="./img/close.svg" alt="close button">
+                <div class="upperPart">
+                    <div class="logoImg"></div>
+                    <div class="right">
+                        <h4>Nous avons tout besoin d'encouragement!</h4>
+                        <p>Utilisez ce formulaire pour écrire un commentaire de gratitude à une résidence et/ou à la personne qui s'occupe de vos proches.</p>
+                    </div>
+                </div>
+                <div class="form">
+                    <div class="left">
+                        <div class="prenom">
+                            <label for="prenom" class="visuallyHidden">Votre prénom*</label>
+                            <input type="text" required placeholder="Prénom" class="prenom">
+
+                        </div>
+                        <div class="residence">
+                            <label for="residence" class="visuallyHidden">Nom de la résidence*</label>
+                            <select name="residence" id="residence">
+                                <option value defaultValue>Choisissez la résidence</option>
+                                <option value="manoir">Manoir Saint-Amand</option>
+                                <option value="jardin">Les Jardins de la Noblesse</option>
+                                <option value="vitae">Groupe Vitae</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="message">Votre message*</label>
+                            <textarea name="message" class="message" id="message" cols="50" rows="10">Message</textarea>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="nom">
+                            <label for="nom" class="visuallyHidden">Votre nom*</label>
+                            <input type="text" required placeholder="Nom" class="nom">
+                        </div>
+                        <div class="personne">
+                            <label for="personne" class="visuallyHidden">Nom ou noms des personnes à remercier (3
+                                max)</label>
+                            <input type="text" placeholder="Nom" class="nomPersonne" required>
+                        </div>
+                        <div class="telecharger">
+                            <label for="telecharger" class="visuallyHidden">Télécharger une photo</label>
+                            <div class="boxT"><img src="./img/download.svg" alt="download picture"> Déposez vos fichiers à
+                                téléverser dans la zone</div>
+                        </div>
+                        <div class="checkBox">
+                            <input type="checkbox" tabindex="0" aria-checked="false">
+                            <label for="checkbox">J'aacepte que ces informations soient publiées et utilisées par
+                                Bonjour Résidence.</label>
+                        </div>
+                        <button id="button">Publier</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </main>
+    <script src="./scripts.js"></script>
+</body>
+</html>
